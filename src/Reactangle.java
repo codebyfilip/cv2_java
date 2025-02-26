@@ -2,7 +2,7 @@ public class Reactangle {
     public static void print(int width, int height) {
 
 
-        //kody si dam do premennych
+        //kody si dam do premennych // linky na daco
         final char TOP_LEFT = '\u250c'; //final ako konstanta, premenna len raz nastavitelna // iba raz ju mozem nastaviť // ako const pri C
         final char TOP_RIGHT = '\u2510';
         final char HORIZONTAL = '\u2500';
