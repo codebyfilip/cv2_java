@@ -1,2 +1,2 @@
-CVIKO 2 OOP na FEI STU 
+#CVIKO 2 OOP na FEI STU 
 
