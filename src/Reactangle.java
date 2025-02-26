@@ -9,12 +9,26 @@ public class Reactangle {
         final char VERTICAL = '\u2502';
         final char BOTTOM_LEFT = '\u2514'; //final ako konstanta, premenna len raz nastavitelna // iba raz ju mozem nastaviť // ako const pri C
         final char BOTTOM_RIGHT = '\u2518';
+        final char SQUARE = '\u25A1';
 
         //ošetrenie
-        if(width < 2 || height < 2) {
-            return;
-        }
+       if(width == 1 || height == 1) {
+           System.out.println(SQUARE);
+           return;
+       }
 
+       if(height == 1) {
+           for(int i = 1; i <= width; i++) {
+               System.out.print(HORIZONTAL);
+           }
+           System.out.println();
+       }
+        if(width == 1) {
+            for(int i = 1; i <= height; i++) {
+                System.out.print(VERTICAL);
+            }
+            System.out.println();
+        }
 
         System.out.print(TOP_LEFT);
         for (int i = 0; i < width-2; i++) {
