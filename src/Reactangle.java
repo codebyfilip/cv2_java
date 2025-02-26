@@ -10,6 +10,12 @@ public class Reactangle {
         final char BOTTOM_LEFT = '\u2514'; //final ako konstanta, premenna len raz nastavitelna // iba raz ju mozem nastaviť // ako const pri C
         final char BOTTOM_RIGHT = '\u2518';
 
+        //ošetrenie
+        if(width < 2 || height < 2) {
+            return;
+        }
+
+
         System.out.print(TOP_LEFT);
         for (int i = 0; i < width-2; i++) {
             System.out.print(HORIZONTAL);
